@@ -1,0 +1,6 @@
+https://www.hackerrank.com/challenges/dynamic-programming-classics-the-longest-common-subsequence/problem
+https://www.hackerrank.com/challenges/unbounded-knapsack/problem
+https://www.hackerrank.com/challenges/xor-and-sum/problem
+https://www.hackerrank.com/challenges/longest-increasing-subsequent/problem
+https://www.hackerrank.com/challenges/summing-pieces/problem
+https://www.hackerrank.com/challenges/sum-vs-xor/problem
