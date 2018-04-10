@@ -23,11 +23,51 @@ def naive_test(a, b):
     return acc
 
 
-def solver():
+def run():
     bin_a = input()
     bin_b = input()
-    a, b = toDec(bin_a), toDec(bin_b)
-    return naive_test(a, b)
+    max_length = max(len(bin_a), len(bin_b))
+    reverse_a = [0] * max_length
+    for i in range(0, len(bin_a)):
+        reverse_a[i] = bin_a[len(bin_a)-1-i]
+    reverse_b = [0] * max_length
+    for i in range(0, len(bin_b)):
+        reverse_b[i] = bin_b[len(bin_b)-1-i]
+
+    return reverse_a, reverse_b
+
+def solver():
+    reverse_a, reverse_b = run()
+    limit = 314519
+    mod = 1000000007
+    count_bits_b = 0
+    power = 1
+    acc = 0
+    i = 0
+    while i < max_length:
+        count_bits_b += int(reverse_b[i])
+        m = count_bits_b if reverse_a[i] == '0' else limit - count_bits_b + 1
+        acc = (acc + power * m) % mod
+        power = (power << 1) % mod
+        i += 1
+
+    while i <= limit:
+        acc = (acc + power * count_bits_b) % mod
+        power = (power << 1) % mod
+        i += 1
+
+    for i in range(0, max_length):
+        acc = (acc + power * count_bits_b) % mod
+        power = (power << 1) % mod
+        count_bits_b -= int(reverse_b[i])
+        i += 1
+
+    return acc
+
+
+def solver_2():
+    reverse_a, reverse_b = run()
+    return
 
 
 print(solver())
