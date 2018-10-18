@@ -1,0 +1,5 @@
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+
+https://www.programcreek.com/2014/02/leetcode-best-time-to-buy-and-sell-stock-java/
+
+https://www.geeksforgeeks.org/stock-buy-sell/
