@@ -1,1 +1,13 @@
 http://codeforces.com/blog/entry/47764
+
+https://www.hackerrank.com/challenges/longest-increasing-subsequent/problem
+
+https://www.hackerrank.com/challenges/string-reduction/problem
+
+https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
+
+https://www.geeksforgeeks.org/maximum-subarray-sum-using-prefix-sum/
+
+https://www.geeksforgeeks.org/maximum-subarray-sum-using-prefix-sum/
+
+https://leetcode.com/problems/maximum-subarray/description/
